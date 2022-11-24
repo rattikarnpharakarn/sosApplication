@@ -34,7 +34,6 @@ class MyCustomForm extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-    
         const Padding(
           padding: EdgeInsets.all(8.0),
           child: TextField(
@@ -57,43 +56,32 @@ class MyCustomForm extends StatelessWidget {
                 hintStyle: TextStyle(fontSize: 20.0, color: Colors.white)),
           ),
         ),
-      
-      
-       Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  OutlinedButton(
-                                    style: OutlinedButton.styleFrom(
-                                      minimumSize: const Size(100, 50),
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(25.0),
-                                      ),
-                                    side: const BorderSide(
-                                          width: 2, color: Color.fromRGBO(255,255,255,10)),
-                                    ),
-                                
-                                    onPressed: () =>
-                                        Navigator.pop(context, false),
-                                    child: Text('aaaa',
-                                        // minFontSize: 7,
-                                        style: const TextStyle(
-                                            color: Color.fromRGBO(255, 255, 255, 10),
-                                            fontFamily: 'NotoSansThai',
-                                            fontWeight: FontWeight.w600,
-                                            fontSize: 16)),
-                                  
-                                  ),
-                                  const SizedBox(width: 10),
-                             
-                                ],
-                              
-                              ),
-      
-      
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                minimumSize: const Size(100, 50),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25.0),
+                ),
+                side: const BorderSide(
+                    width: 2, color: Color.fromRGBO(255, 255, 255, 10)),
+              ),
+              onPressed: () => Navigator.pop(context, false),
+              child: Text('aaaa',
+                  // minFontSize: 7,
+                  style: const TextStyle(
+                      color: Color.fromRGBO(255, 255, 255, 10),
+                      fontFamily: 'NotoSansThai',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16)),
+            ),
+            const SizedBox(width: 10),
+          ],
+        ),
       ],
-      
     );
   }
 }
